@@ -1,8 +1,0 @@
-{
-  "visitors":[
-    {"name":"屈于凯" , "visitTime":"aaa" , "event":"aaaaaaaa"},
-    { "name": "张三", "visitTime": 20, "event": "zhangsan@example.com" },
-    { "name": "李四", "visitTime": 25, "event": "lisi@example.com" },
-    { "name": "王五", "visitTime": 30, "event": "wangwu@example.com" }
-  ]
-}
