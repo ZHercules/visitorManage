@@ -15,8 +15,7 @@
     <el-dialog
       title="温馨提示"
       :visible.sync="dialogVisible"
-      width="30%"
-      :before-close="handLeClose">
+      width="30%">
       <span>请输入账号和密码</span>
       <span slot="footer" class="dialog- footer">
         <el-button type="primary" @click="dialogVisible = false">确定</el-button>

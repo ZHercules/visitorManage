@@ -76,10 +76,15 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          axios.post('/api/register', this.form)
+          axios.post('/api/register', this.ruleForm)
             .then((response) => {
-              console.log("登记成功");
-              router.back();
+              if(response.data.success){
+                console.log("登记成功");
+                this.$router.push('/main/index');
+                //router.back();
+              }else {
+               console.log("登记失败")
+              }
             })
             .catch((error) => {
               console.log(error);
